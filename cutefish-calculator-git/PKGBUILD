@@ -8,9 +8,11 @@ pkgdesc="CutefishOS Calculator"
 arch=('x86_64')
 url="https://github.com/cutefishos/calculator"
 license=('GPL')
-groups=('cutefish')
+groups=('cutefish-git')
 depends=('fishui' 'libcutefish')
 makedepends=('extra-cmake-modules' 'ninja' 'qt5-tools' 'git')
+provides=("$_pkgname")
+conflicts=("$_pkgname")
 source=("git+$url.git")
 sha512sums=('SKIP')
 
