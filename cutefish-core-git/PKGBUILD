@@ -1,6 +1,5 @@
 # Maintainer: Ali Nabipour <alinabipour01@gmail.com>
 
-
 pkgname=cutefish-core-git
 _pkgname=cutefish-core
 pkgver=0.3.r42.g9c18511
