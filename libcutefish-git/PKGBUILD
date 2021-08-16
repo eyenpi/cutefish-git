@@ -2,7 +2,7 @@
 
 pkgname=libcutefish-git
 _pkgname=libcutefish
-pkgver=0.2
+pkgver=0.2.r4.g4caad74
 pkgrel=1
 pkgdesc="System library for Cutefish applications"
 arch=('x86_64')
@@ -18,18 +18,18 @@ source=("git+$url.git")
 sha512sums=('SKIP')
 
 pkgver() {
-  cd core
+  cd $_pkgname
   git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 build() {
-  cd $pkgname-$pkgver
+  cd $_pkgname
 
   cmake -GNinja -DCMAKE_INSTALL_PREFIX=/usr .
   ninja
 }
 
 package() {
-  cd $pkgname-$pkgver
+  cd $_pkgname
   DESTDIR="$pkgdir" ninja install
 }
