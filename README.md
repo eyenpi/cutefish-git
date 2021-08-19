@@ -9,7 +9,7 @@ your AUR helper of choice.
 
     $ paru -S fishui-git libcutefish-git cutefish-wallpapers-git cutefish-statusbar-git \
     cutefish-settings-git cutefish-qt-plugins-git cutefish-launcher-git cutefish-kwin-plugins-git \
-    cutefish-icons-git cutefish-filemanager-git cutefish-dock-git cutefish-core-git cutefish-calculator-git
+    cutefish-icons-git cutefish-filemanager-git cutefish-dock-git cutefish-core-git cutefish-calculator-git cutefish-terminal-git cutefish-screenlocker-git
 
 ### Script
 The 'setup.sh' will go through all of packages, build and install them.
