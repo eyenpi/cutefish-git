@@ -11,7 +11,7 @@ for f in *-git/; do
         mv aur.gitignore .gitignore
         makepkg --printsrcinfo > .SRCINFO
         git add PKGBUILD .SRCINFO .gitignore
-        git commit -m "updated to version 0.4"
+        git commit -m "updated to version 0.5"
         git push
         cd ~/w/cutefish-git
 	fi
