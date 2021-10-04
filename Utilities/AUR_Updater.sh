@@ -14,7 +14,7 @@ for f in ${packages[@]}; do
     find . ! -name 'PKGBUILD' -type f,d -exec rm -rf {} +
     cd ~/w/cutefish-git-aur/$f
     cp ~/w/cutefish-git/$f/PKGBUILD .
-    cp ~/w/cutefish-git/AUR/aur.gitignore .
+    cp ~/w/cutefish-git/Utilities/aur.gitignore .
     mv aur.gitignore .gitignore
     makepkg --printsrcinfo > .SRCINFO
     git add PKGBUILD .SRCINFO .gitignore
