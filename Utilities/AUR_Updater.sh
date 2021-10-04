@@ -10,7 +10,11 @@ packages=(
 
 for f in ${packages[@]}; do
     cd $f
-    makepkg --noarchive -oCcfs --noconfirm
+    if [ $f == "fishui-git" ] || [ $f == "libcutefish-git" ]; then
+        makepkg --noarchive -Ccfsi --noconfirm
+    else
+        makepkg --noarchive -oCcfs --noconfirm
+    fi
     find . ! -name 'PKGBUILD' -type f,d -exec rm -rf {} +
     cd ~/w/cutefish-git-aur/$f
     cp ~/w/cutefish-git/$f/PKGBUILD .
@@ -18,7 +22,7 @@ for f in ${packages[@]}; do
     mv aur.gitignore .gitignore
     makepkg --printsrcinfo > .SRCINFO
     git add PKGBUILD .SRCINFO .gitignore
-    # git commit -m "updated to version 0.5"
-    # git push
+    git commit -m "updated to version 0.5"
+    git push
     cd ~/w/cutefish-git
 done
