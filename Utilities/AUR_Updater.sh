@@ -18,7 +18,7 @@ for f in ${packages[@]}; do
     mv aur.gitignore .gitignore
     makepkg --printsrcinfo > .SRCINFO
     git add PKGBUILD .SRCINFO .gitignore
-    git commit -m "updated to version 0.5"
-    git push
+    # git commit -m "updated to version 0.5"
+    # git push
     cd ~/w/cutefish-git
 done
