@@ -6,7 +6,7 @@ packages=(
             "cutefish-kwin-plugins-git" "cutefish-launcher-git" "cutefish-qt-plugins-git"
             "cutefish-screenlocker-git" "cutefish-settings-git" "cutefish-statusbar-git"
             "cutefish-terminal-git" "cutefish-wallpapers-git" "cutefish-screenshot-git"
-            "cutefish-videoplayer-git"
+            "cutefish-videoplayer-git" "cutefish-gtk-theme-git"
         )
 
 for f in ${packages[@]}; do
