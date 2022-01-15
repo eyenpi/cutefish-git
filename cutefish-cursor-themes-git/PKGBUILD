@@ -21,7 +21,7 @@ sha512sums=('SKIP')
 #   git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 # }
 
-ppackage() {
+package() {
 	install -d "$pkgdir/usr/share/icons"
 	cp -r cutefish-dark cutefish-light "$pkgdir/usr/share/icons"
 }
