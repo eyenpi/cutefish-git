@@ -1,3 +1,4 @@
+This project is discontinued as the upstream Cutefish developer is inactive.
 # cutefish-git
 This repository contains the PKGBUILDs of cutefish desktop environment
 in Arch User Repository. If there is problem with each of them, please submit
