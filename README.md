@@ -7,9 +7,12 @@ an issue and explain the problem.
 These packages are available in AUR. You can install them easily with
 your AUR helper of choice.
 
-    $ paru -S fishui-git libcutefish-git cutefish-wallpapers-git cutefish-statusbar-git \
-    cutefish-settings-git cutefish-qt-plugins-git cutefish-launcher-git cutefish-kwin-plugins-git \
-    cutefish-icons-git cutefish-filemanager-git cutefish-dock-git cutefish-core-git cutefish-calculator-git cutefish-terminal-git cutefish-screenlocker-git
+    $ paru -S fishui-git "libcutefish-git cutefish-core-git cutefish-calculator-git \
+            cutefish-dock-git cutefish-filemanager-git cutefish-icons-git \
+            cutefish-kwin-plugins-git cutefish-launcher-git cutefish-qt-plugins-git \
+            cutefish-screenlocker-git cutefish-settings-git cutefish-statusbar-git \
+            cutefish-terminal-git cutefish-wallpapers-git cutefish-screenshot-git \
+            cutefish-videoplayer-git cutefish-gtk-themes-git cutefish-cursor-themes-git
 
 ### Script
 The 'setup.sh' will go through all of packages, build and install them.
@@ -21,4 +24,4 @@ So you can execute this file.
 Obviously you can build all of packages yourself. Good luck with that.
 
 ## TODO
-- [ ] Create a meta package to install all packages in one package
+- [x] Create a meta package to install all packages in one package
